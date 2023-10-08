@@ -12,6 +12,7 @@ namespace VendorList.Models
     public List<Order> VendorOrder { get; set; } = new List<Order>();
 
   }
+
   public class ThoseWhoVend
   {
     private static List<Vendor> _instances = new List<Vendor> { };
@@ -22,6 +23,17 @@ namespace VendorList.Models
       vendor.ID = _vendorID++;
     }
 
+
+    public static List<Vendor> GetVendors()
+    {
+      return _instances;
+    }
+
+    public static Vendor GetVendorById(int id)
+    {
+      return _instances.Find(v => v.ID == id);
+    }
+
     public static void AddOrder(int vendorID, Order order)
     {
       Vendor vendor = _instances.Find(v => v.ID == vendorID);
@@ -29,10 +41,6 @@ namespace VendorList.Models
       {
         vendor.VendorOrder.Add(order);
       }
-    }
-    public static List<Vendor> GetVendors()
-    {
-      return _instances;
     }
 
   }

@@ -1,0 +1,30 @@
+@{
+  Layout = "_Layout";
+}
+
+@using VendorList.Models;
+@model Vendor
+
+<h1>@Model.Name - make an order</h1>
+
+<ul>
+  @if (Model.VendorOrder != null && Model.VendorOrder.Any())
+  {
+    foreach (var order in Model.VendorOrder)
+    {
+      <li>@order.ItemName</li>
+    }
+    <a href="/Vendor/@Model.ID/AddOrder">another one?</a>
+    <br>
+    <a href="/Vendor">oops wrong vendor</a>
+
+  }
+  else
+  {
+    <li>no orders yet, son</li>
+    <a href="/Vendor/@Model.ID/AddOrder">add one</a>
+    <br>
+    <a href="/Vendor">oops wrong vendor</a>
+
+  }
+</ul>

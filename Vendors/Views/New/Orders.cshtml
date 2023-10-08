@@ -1,0 +1,13 @@
+@model VendorList.Models.Vendor
+
+<h1>new stuff for @Model.Name</h1>
+
+<form method="post" action="/Vendor/@Model.ID/AddOrder">
+  <div>
+    <label for="itemName">whassit:</label>
+    <input type="text" id="itemName" name="itemName" required />
+  </div>
+  <button type="submit">Add Order</button>
+</form>
+
+<a href="/vendors">others?</a>

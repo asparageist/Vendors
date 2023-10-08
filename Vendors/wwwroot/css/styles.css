@@ -1,0 +1,31 @@
+a:link {
+  color:rgb(95, 95, 95);
+}
+
+a:visited {
+  color:rgb(115, 115, 115)
+}
+
+a:hover {
+  color: white;
+}
+
+body {
+  font-family: 'roboto', sans-serif;
+  text-shadow: rgba(10, 10, 10, 1) 5px 5px 10px;
+  background-color: rgb(206, 200, 195);
+  background-image: url('baker.jpeg');
+  background-repeat: no-repeat;
+  color:rgb(95, 95, 95);
+  text-align: left;
+  background-position: center right;
+  margin: 0;
+  display: grid;
+  padding-right: 55%;
+  place-items: center;
+  height: 100vh;
+}
+
+h1 {
+  -webkit-text-stroke: 2px black;
+}

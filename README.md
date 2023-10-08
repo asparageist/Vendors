@@ -2,24 +2,28 @@
 
 #### By Joseph Murray
 
-#### A console app that calculates the value of customer orders for loaves of bread or pastries
+#### An MCV app that keeps track of Pierre's customers and their orders
 
 ## Technologies Used
 
 - Markdown
 - Github
 - C#
+- ASP.NET Core
+- HTML
+- CSS
 
 ## Description
 
-This app takes a user's bakery order and applies certain sales: buy 2 get 1 free for bread and buy 3 get 1 free for pastries.
+This app creates a list of Pierre's customers, assigns them a unique ID number and keeps track of all orders they make.
 
 ## Setup/Installation Requirements
 
 - Clone the repository from http://github.com/asparageist/Vendors.git
-- Navigate to Bakery folder in the directory
+- Navigate to Vendors folder in the directory
 - Execute the following command in your terminal:
 - - dotnet run
+- Open the browser to https://localhost:5001
 
 ## licensing info
 
